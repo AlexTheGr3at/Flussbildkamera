@@ -61,8 +61,6 @@ void FotoAufnehmenUndHttpPost( void ) {
 }
 
 void setup() {
-  //pinMode(ONBOARD_LED_PIN, OUTPUT);
-  
   // Setze die Baudrate des seriellen Monitors auf 115200
   SerialMon.begin(115200);
 
@@ -74,7 +72,6 @@ void setup() {
 
   // Deaktiviert den 'Brownout-Detektor'
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
-
 
   // OV2640-Kameramodul
   camera_config_t config;
@@ -127,8 +124,6 @@ void setup() {
   if (strlen(simPIN) && modem.getSimStatus() != 3 ) {
     modem.simUnlock(simPIN);
   }
-
-  //digitalWrite(ONBOARD_LED_PIN, HIGH);
 
   //SIM-Verbindung
   SerialMon.print("Connecting to APN: ");
