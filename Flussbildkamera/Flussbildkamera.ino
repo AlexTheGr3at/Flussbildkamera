@@ -29,7 +29,7 @@
 #define PCLK_GPIO_NUM     22
 
 // An diese URL wird das Bild geschickt
-const char* server_url = "https://it4paddlers.org/webcam/api/v1/upload";
+const char* server_url = "***";   // eigene Url angeben
 
 // HardwareSerial Serial2(2);
 
