@@ -6,10 +6,6 @@
 
 #include "SIM_Verbindung.ino.h"   // Headerdatei für die SIM-Verbindung
 
-// serielle Datenübertragung der ESP32-Cam
-// #define ESP32_CAM_RX      3
-// #define ESP32_CAM_TX      1
-
 // Pins des OV2640 Kamerasensors zum Kameramodul (CAMERA_MODEL_AI_THINKER)
 #define PWDN_GPIO_NUM     32
 #define RESET_GPIO_NUM    -1
