@@ -122,10 +122,10 @@ void setup() {
   }
 
   //SIM-Verbindung
-  SerialMon.print("Connecting to APN: ");
+  SerialMon.print("Verbindung herstellen zum APN: ");
   SerialMon.print(apn);
   if (!modem.gprsConnect(apn, gprsUser, gprsPass)) {
-    SerialMon.println(" fail");
+    SerialMon.println(" Fehler");
   }
   else {
     SerialMon.println(" OK");
