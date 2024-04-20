@@ -1,2 +1,3 @@
 # Flussbildkamera
-ESP32-Cam macht ein Bild, schickt dieses über eine Http-Post Request an eine bestimmte URL und geht die restliche Zeit in den Deep-Sleep-Mode um Strom zu sparen. 
+Dieser Code nimmt Fotos in unterschiedlichen Zeitabständen auf und sendet sie über eine SIM800L-Modulverbindung an eine bestimmte URL mittels einer Http-Post Request. Der ESP befindet sich größtenteils im Deep-Sleep-Modus und wacht nur zwischen 6:00 und 18:00 Uhr jede Stunde einmal auf, um ein Foto zu machen und es auf einen vorgegebenen Webserver anzuzeigen - insgesamt 12 Mal. Um Strom zu sparen, wird der ESP zwischen 18:00 und 6:00 Uhr morgens ständig im Deep-Sleep-Modus betrieben. 
+Das einzige Problem liegt an der SIM800L-Verbindung es liegt auch eine Version über einfache Wi-Fi Verbindung vor.
